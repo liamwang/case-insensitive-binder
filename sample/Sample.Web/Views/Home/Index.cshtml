@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Dictionary<string, string>
+
+<h2>Key and value:</h2>
+<p class="help-block">The key and value from server side.</p>
+<pre id="show">
+{"A","Value of A or a"}
+</pre>
+<hr />
+<div>
+    <h4>Input "A" or "a" will both change the value.</h4>
+    <div class="form-group form-inline">
+        <label>Key:</label>
+        <input class="form-control" type="text" id="key"/>
+        <span class="text-muted"></span>
+    </div>
+    <div class="form-group form-inline">
+        <label>Value:</label>
+        <input  class="form-control" type="text" id="value" value="Value of A or a" />
+    </div>
+    <div class="form-group form-inline">
+        <button id="button" class="btn btn-primary">Change Value</button>
+    </div>
+</div>
+
+
+@section scripts{
+    <script>
+        $('#button').click(function () {
+            var key = $('#key').val(), 
+                value = $('#value').val();
+            if (key.toLocaleLowerCase() !== "a") {
+                alert('Please input "A" or "a" in Key field.');
+                return
+            }
+
+            var data = '{"' + key + '":"' + value + '"}';
+
+            $.ajax({
+                url: 'test/home',
+                method: 'PUT',
+                contentType: 'application/json',
+                data: data
+            }).done(function (data) {
+                $('#show').text(JSON.stringify(data));
+            });
+         });
+    </script>
+}
