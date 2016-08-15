@@ -35,7 +35,7 @@ public void ConfigureServices(IServiceCollection services)
 public IActionResult Put([Insensitive] dynamic data)
 {
     string value1 = data.A;
-    string value2 = Data.a;
+    string value2 = data.a;
 
     bool b = value1 == value2; // true
 
