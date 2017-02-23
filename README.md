@@ -1,6 +1,6 @@
 # Case-Insensitive Dynamic Model Binder
 
-This an ASP.NET Core dynamic model binder which implements binding dynamic type with case-insensitive properties.
+This is an ASP.NET Core dynamic model binder which implements binding dynamic type with case-insensitive properties.
 
 ## Installation
 
