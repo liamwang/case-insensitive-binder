@@ -45,5 +45,5 @@ public IActionResult Put([Insensitive] dynamic data)
 
 ## Sample Preview
 
-![](http://i67.tinypic.com/15gcvus.gif)
+![Sample Preview](https://user-images.githubusercontent.com/5000396/27509536-18f34ddc-5932-11e7-8f64-e1314b750726.gif)
 
