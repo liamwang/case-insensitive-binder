@@ -1,23 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A54A6D0A-8214-4CE9-BC4B-77F8200670A1}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CaseInsensitiveDynamicModelBinder", "src\CaseInsensitiveDynamicModelBinder\CaseInsensitiveDynamicModelBinder.xproj", "{8C2AE6D5-0C62-40B5-81EB-D2309B0C75F7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{46FEF8F0-BC5C-4B2C-BD84-7837BEEC44E2}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sample.Web", "sample\Sample.Web\Sample.Web.xproj", "{1535942B-23FD-4F82-839B-410938FBC492}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1931303A-560C-4059-9968-194FD5210093}"
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
-		global.json = global.json
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseInsensitiveDynamicModelBinder", "src\CaseInsensitiveDynamicModelBinder\CaseInsensitiveDynamicModelBinder.csproj", "{8C2AE6D5-0C62-40B5-81EB-D2309B0C75F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Web", "sample\Sample.Web\Sample.Web.csproj", "{1535942B-23FD-4F82-839B-410938FBC492}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,5 +39,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8C2AE6D5-0C62-40B5-81EB-D2309B0C75F7} = {A54A6D0A-8214-4CE9-BC4B-77F8200670A1}
 		{1535942B-23FD-4F82-839B-410938FBC492} = {46FEF8F0-BC5C-4B2C-BD84-7837BEEC44E2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E48C14E9-64E3-4864-A3D6-2A2F5B62C417}
 	EndGlobalSection
 EndGlobal

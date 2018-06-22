@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Internal;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace CaseInsensitiveDynamicModelBinder
 {

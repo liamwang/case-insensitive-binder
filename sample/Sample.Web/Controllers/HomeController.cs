@@ -7,7 +7,6 @@ using CaseInsensitiveDynamicModelBinder;
 
 namespace Sample.Web.Controllers
 {
-    
     public class HomeController : Controller
     {
         private static Dictionary<string, string> _dic;
@@ -27,7 +26,7 @@ namespace Sample.Web.Controllers
         }
 
         [HttpPut]
-        [Route("test/[controller]")]
+        [Route("test")]
         public IActionResult Put([Insensitive] dynamic data)
         {
             string value = data.A;
