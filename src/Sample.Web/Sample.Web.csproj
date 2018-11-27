@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\CaseInsensitiveDynamicModelBinder\CaseInsensitiveDynamicModelBinder.csproj" />
+    <ProjectReference Include="..\CaseInsensitiveDynamicModelBinder\CaseInsensitiveDynamicModelBinder.csproj" />
   </ItemGroup>
 
 </Project>
