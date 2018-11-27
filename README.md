@@ -11,7 +11,7 @@ At present the code is pre-release but when ready it will be available on Nuget.
 If you prefer, you can compile CaseInsensitiveDynamicModelBinder yourself, you'll need:
 
 * Visual Studio 2015 with Update 3 (or above), or Visual Studio Code.
-* The .NET Core 1.0 SDK Installer.
+* The .NET Core 1.0+ SDK Installed.
 
 To clone it locally click the "Clone or dowload" button above or run the following git commands.
 
